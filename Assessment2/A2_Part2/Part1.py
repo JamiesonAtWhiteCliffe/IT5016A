@@ -1,8 +1,9 @@
-from datetime import date
-counter = 1000
 # Created a Python function called staff_info. I used Python input methods to collect information about
 #  a staff member submitting a requisition (i.e, Date. Staff ID, Staff Name and Requisition ID).
 #A unique ID should be generated using a counter plus 10000 and assigned as the requisition ID.
+from datetime import date
+counter = 1000
+
 def staff_info():
     today = date.today()
     staff_id = input("Please enter staff id: ")
