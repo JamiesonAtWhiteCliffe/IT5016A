@@ -1,3 +1,6 @@
+# Create a Python function called requisitions_total. Calll the function staff_info from Task 1.
+# Then ask the staff to input his requisition items (i.e, each item name with a price). 
+# This function should return the computed total value for all the requisition items.
 from Part1 import staff_info
 
 def requisitions_total():

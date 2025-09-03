@@ -1,6 +1,6 @@
 from Part3 import requisition_approval
-
-
+#Create a Python function called display_requisitions. 
+# The function should display the staff's basic information and the total of his requisition.
 def display_requisitions():
     requi = requisition_approval()
     print("Date: ", requi[0])
