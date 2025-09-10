@@ -26,7 +26,7 @@ class RequisitionSystem:
     def requisition_details(self):
         while True:
             item_name = input("Please enter your requisition item: ")
-            if item_name == "Done":
+            if item_name.lower() == "done":
                 break
             item_price = int(input("Please enter your item price: "))
             self.items.append((item_name, item_price))
@@ -47,8 +47,9 @@ class RequisitionSystem:
             l = len(self.items)
             if l > 0:
                 if self.total >= 500:
-                    self.status = input("Please enter your decision to approve or decline the requisition")
-                    if self.status == "Approved":
+                    status = input("Please enter your decision to approve or decline the requisition")
+                    if status.lower() == "approved":
+                        self.status == "Approved"
                         self.approve_reference = self.staff_id + str(self.requisition_id)[-3:]
                     else:
                         self.status = "Not Approved"
