@@ -47,7 +47,7 @@ class RequisitionSystem:
             l = len(self.items)
             if l > 0:
                 if self.total >= 500:
-                    status = input("Please enter your decision to approve or decline the requisition")
+                    status = input("Please enter your decision to approve or decline the requisition: ")
                     if status.lower() == "approved":
                         self.status == "Approved"
                         self.approve_reference = self.staff_id + str(self.requisition_id)[-3:]
